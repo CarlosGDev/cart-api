@@ -13,12 +13,14 @@ class ProductServiceTest extends TestCase
 {
     public function testGetProducts(): void
     {
+        $productMock = $this->getMockBuilder(Product::class)
+            ->disableOriginalConstructor()
+            ->onlyMethods(['getId', 'getPrice', 'getName', 'getDescription'])
+            ->getMock();
         $productRepoMock = $this->createMock(ProductRepository::class);
         $productRepoMock->expects(self::once())
             ->method('findAllProducts')
-            ->willReturn([
-                new Product('Apple Mac mini', 'Mini PC', 485),
-            ]);
+            ->willReturn([$productMock]);
         $service = new ProductService($productRepoMock);
         $products = $service->getProducts();
         $this->assertCount(1, $products);
