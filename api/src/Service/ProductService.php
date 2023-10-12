@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Service;
 
+use App\DTO\Response\ProductResponseDTO;
 use App\Entity\Product;
 use App\Repository\ProductRepositoryInterface;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -36,7 +37,7 @@ class ProductService implements ProductServiceInterface
     {
         $productsDto = new ArrayCollection();
         foreach ($products as $product) {
-            $productDto = new Product($product->getName(), $product->getDescription(), $product->getPrice());
+            $productDto = new ProductResponseDTO($product->getId(), $product->getName(), $product->getDescription(), $product->getPrice());
             $productsDto->add($productDto);
         }
 
