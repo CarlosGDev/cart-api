@@ -14,7 +14,7 @@ class ExceptionListener
     public function onKernelException(ExceptionEvent $event): void
     {
         $exception = $event->getThrowable();
-        $message = sprintf('My Error says: %s', $exception->getMessage());
+        $message = sprintf('error: %s', $exception->getMessage());
         $response = new JsonResponse(['message' => $message]);
 
         if ($exception instanceof HttpExceptionInterface) {
