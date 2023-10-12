@@ -8,7 +8,6 @@
 * You can go to http://localhost:8080/api/doc and try the shop api  
 
 ![api doc_img](doc/img/api_doc.png)
-![api doc_img](<iframe src="doc/img/api_doc.png" height="200px" width="400px"></iframe>)
 
 
 ## Data Base Design
