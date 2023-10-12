@@ -1,10 +1,10 @@
 {
-    "name": "asgoodasnew/cart-api",
+    "name": "cart-api",
     "type": "symfony-app",
     "authors": [
         {
             "name": "Carlos Goncalves",
-            "email": "carlos.goncalves@asgoodasnew.com"
+            "email": "casgoncalvesdev84@gmail.com"
         }
     ],
     "minimum-stability": "stable",
