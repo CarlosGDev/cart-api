@@ -5,7 +5,7 @@
 * Run `docker-compose exec php make load-fixtures`
 
 ## API DOC
-* You can go to http://localhost:8080/api/doc and try the shop api  
+* You can go to http://localhost:8080/api/doc and try the cart api  
 
 ![api doc_img](doc/img/api_doc.png)
 
