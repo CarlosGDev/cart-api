@@ -1,0 +1,11 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Cart API
+            description: Das ist ein Cart api!
+            version: 1.0.0
+
+    areas:
+        path_patterns:
+            - ^/api/carts
+            - ^/api/products
