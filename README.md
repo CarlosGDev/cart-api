@@ -14,9 +14,9 @@
 ![db_design_img](doc/img/db_design.png)
 
 ## Data
-* [cart.csv](src%2FDataFixtures%2FResources%2Fcart.csv)
-* [cart_item.csv](src%2FDataFixtures%2FResources%2Fcart_item.csv)
-* [product.csv](src%2FDataFixtures%2FResources%2Fproduct.csv)
+* [cart](src%2FDataFixtures%2FResources%2Fcart.csv)
+* [cart_item](src%2FDataFixtures%2FResources%2Fcart_item.csv)
+* [product](src%2FDataFixtures%2FResources%2Fproduct.csv)
 
 ## Test
 * Run 'docker-compose exec php make all'
